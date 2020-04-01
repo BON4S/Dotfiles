@@ -1,4 +1,4 @@
-# BON4S .zshrc (https://github.com/BON4S/Dotfiles)
+# BON4S .zshrc (https://github.com/BON4S/Dotfiles).
 
 # This is my solution to automatically add some project folders to the path.
 array=()
