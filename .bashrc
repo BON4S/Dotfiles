@@ -1,4 +1,4 @@
-# BON4S .bashrc (https://github.com/BON4S/Dotfiles)
+# BON4S .bashrc (https://github.com/BON4S/Dotfiles).
 # This is a basic configuration. I currently use ZSH, see .zshrc
 
 # If not running interactively, don't do anything.
