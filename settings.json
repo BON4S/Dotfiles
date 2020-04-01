@@ -1,0 +1,58 @@
+{
+  "window.title": "Folder: /${activeFolderShort} ⚛ ${activeEditorShort}",
+  "window.menuBarVisibility": "toggle",
+  "workbench.colorTheme": "Magic Goat Theme",
+  "workbench.editor.labelFormat": "short",
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": true,
+  "extensions.ignoreRecommendations": true,
+  "explorer.openEditors.visible": 0,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "breadcrumbs.enabled": true,
+  "auto-run-command.rules": [
+    {
+      "condition": "always",
+      "command": "terminalTabs.createTerminal"
+    }
+  ],
+  
+  "git.autofetch": true,
+  "gitlens.defaultDateFormat": "DD/MMM (HH:mm) YYYY",
+  "gitlens.defaultDateShortFormat": "DD/MMM (HH:mm) YYYY",
+  
+  //"javascript.validate.enable": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "html.autoClosingTags": false,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "eslint.packageManager": "yarn",
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  "prettier.singleQuote": true,
+  "prettier.bracketSpacing": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.tabWidth": 2,
+  "prettier.disableLanguages": ["json"],
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+  "editor.fontFamily": "'JetBrains Mono'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+}
