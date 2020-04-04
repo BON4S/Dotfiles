@@ -16,8 +16,8 @@ if (( ${#array[@]} )); then
 fi
 
 # Path added manually.
-export PATH=$PATH:/home/bonas/.npm-global/bin
-export PATH=$PATH:/home/bonas/.config/yarn/global/node_modules/.bin
+export PATH=$PATH:$HOME/.npm-global/bin
+export PATH=$PATH:$HOME/.config/yarn/global/node_modules/.bin
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
