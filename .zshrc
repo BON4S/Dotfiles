@@ -34,8 +34,8 @@ export LC_ALL=pt_BR.UTF-8
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Alias.
-alias tempo="curl https://wttr.in/"
-alias clima="curl https://wttr.in/"
+alias tempo="curl 'https://wttr.in/?Fq&lang=pt-br'"
+alias clima="curl 'https://wttr.in/?Fq&lang=pt-br'"
 alias disco="df -h -t ext4"
 alias disk="df -h -t ext4"
 alias wifi="iwgetid | cut -d':' -f2 | sed -e 's/\"//g'"
