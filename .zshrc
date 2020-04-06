@@ -50,6 +50,17 @@ alias yd="youtube-dl"
 alias cdi="cd /mnt/home2/dev/sh/ignore && pwd"
 alias cdd="cd /mnt/home2/dev && pwd"
 alias de="cd $HOME/Desktop && pwd && ls"
+alias gcom="git commit -m"
+alias gcomback="git reset --soft HEAD~1"
+alias gc="git checkout"
+alias gcm="git checkout master"
+alias gcb="git checkout -b"
+alias gst="git status -sb"
+alias gsf="git show --name-only"
+alias glog="git log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30"
+alias gunstage="git reset HEAD --"
+alias gundo="git checkout --"
+alias gpom="git push origin master -u"
 
 # ------------
 # Lines configured by zsh-newuser-install.
@@ -118,6 +129,7 @@ HIST_STAMPS="dd/mm/yyyy"
 plugins=(
   colored-man-pages
   colorize
+  fast-syntax-highlighting
   safe-paste
   sudo
   zsh-autosuggestions
