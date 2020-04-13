@@ -20,7 +20,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/opt/android-studio/bin
-export PATH=$PATH:/usr/lib/jvm/java-11-openjdk/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 
 # Preferred editor.
 export EDITOR="nano"
