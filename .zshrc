@@ -1,15 +1,15 @@
 # BON4S .zshrc (https://github.com/BON4S/Dotfiles).
 
 # This is my solution to automatically add some project folders to the path.
-array=()
-while IFS= read -r -d $'\0'; do
-  array+=("$REPLY")
-done < <(find /mnt/home2/dev -maxdepth 5 -type d -name ".bin" -print0)
-if (( ${#array[@]} )); then
-  for x in "${array[@]}"; do
-    export PATH=$PATH:${x}
-  done
-fi
+# array=()
+# while IFS= read -r -d $'\0'; do
+#   array+=("$REPLY")
+# done < <(find /mnt/home2/dev -maxdepth 5 -type d -name ".bin" -print0)
+# if (( ${#array[@]} )); then
+#   for x in "${array[@]}"; do
+#     export PATH=$PATH:${x}
+#   done
+# fi
 
 # Path added manually.
 export PATH=$PATH:$HOME/.npm-global/bin
