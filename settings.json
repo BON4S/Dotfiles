@@ -4,7 +4,10 @@
   "workbench.colorTheme": "Magic Goat Theme",
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "none",
-  "workbench.activityBar.visible": true,
+  "workbench.editor.titleScrollbarSizing": "large",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.showIcons": false,
+  "workbench.activityBar.visible": false,
   "extensions.ignoreRecommendations": true,
   "explorer.openEditors.visible": 0,
   "explorer.compactFolders": false,
@@ -12,12 +15,6 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "breadcrumbs.enabled": true,
-  "auto-run-command.rules": [
-    {
-      "condition": "always",
-      "command": "terminalTabs.createTerminal"
-    }
-  ],
   
   "git.autofetch": true,
   "gitlens.defaultDateFormat": "DD/MMM (HH:mm) YYYY",
