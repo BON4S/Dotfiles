@@ -49,8 +49,8 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.suggestSelection": "first",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
 }
