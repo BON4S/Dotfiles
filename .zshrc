@@ -12,7 +12,10 @@
 # fi
 
 # Path added manually.
-export PATH=$PATH:$HOME/.npm-global/bin
+export XDG_CONFIG_HOME=/usr/share
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# export PATH=$PATH:$HOME/.npm-global/bin
 export PATH=$PATH:$HOME/.config/yarn/global/node_modules/.bin
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -61,6 +64,7 @@ alias glog="git log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%
 alias gunstage="git reset HEAD --"
 alias gundo="git checkout --"
 alias gpom="git push origin master -u"
+alias code="code --user-data-dir '/home/bonas/.config/Code - OSS/'"
 
 # ------------
 # Lines configured by zsh-newuser-install.
