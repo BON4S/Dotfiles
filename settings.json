@@ -15,16 +15,19 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "breadcrumbs.enabled": true,
-  
+
   "git.autofetch": true,
   "gitlens.defaultDateFormat": "DD/MMM (HH:mm) YYYY",
   "gitlens.defaultDateShortFormat": "DD/MMM (HH:mm) YYYY",
-  
-  //"javascript.validate.enable": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
   "html.autoClosingTags": false,
+
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
+
   "eslint.packageManager": "yarn",
 
   "emmet.syntaxProfiles": { "javascript": "jsx" },
@@ -39,7 +42,7 @@
   "prettier.disableLanguages": ["json"],
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "editor.fontFamily": "'JetBrains Mono'",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
@@ -49,8 +52,7 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.suggestSelection": "first",
-  "editor.formatOnSave": false,
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
 }
