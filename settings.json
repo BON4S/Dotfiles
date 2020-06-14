@@ -1,6 +1,7 @@
 {
   "window.title": "Folder: /${activeFolderShort} ⚛ ${activeEditorShort}",
   "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Magic Goat Theme",
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "none",
@@ -54,6 +55,5 @@
   "editor.suggestSelection": "first",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "window.zoomLevel": 0
+  "editor.formatOnType": true
 }
