@@ -65,6 +65,7 @@ alias gunstage="git reset HEAD --"
 alias gundo="git checkout --"
 alias gpom="git push origin master -u"
 alias code="code --user-data-dir '/home/bonas/.config/Code - OSS/'"
+alias rn="/mnt/home2/dev/sh/ignore/reactnative.sh"
 
 # ------------
 # Lines configured by zsh-newuser-install.
