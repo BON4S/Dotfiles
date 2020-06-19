@@ -13,6 +13,7 @@
   "explorer.openEditors.visible": 0,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "breadcrumbs.enabled": true,
