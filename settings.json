@@ -39,7 +39,6 @@
   "prettier.bracketSpacing": true,
   "prettier.trailingComma": "all",
   "prettier.semi": true,
-  "prettier.jsxBracketSameLine": true,
   "prettier.tabWidth": 2,
   "prettier.disableLanguages": ["json"],
 
