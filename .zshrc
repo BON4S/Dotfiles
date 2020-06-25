@@ -1,6 +1,7 @@
 # BON4S .zshrc (https://github.com/BON4S/Dotfiles).
 
 # This is my solution to automatically add some project folders to the path.
+# THIS SLOWS THE INITIALIZATION OS ZSH
 # array=()
 # while IFS= read -r -d $'\0'; do
 #   array+=("$REPLY")
@@ -12,6 +13,7 @@
 # fi
 
 # Path added manually.
+export PATH=$PATH:$HOME/.cargo/bin
 export XDG_CONFIG_HOME=/usr/share
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -26,8 +28,8 @@ export PATH=$PATH:/opt/android-studio/bin
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 
 # Preferred editor.
-export EDITOR="nano"
-export VISUAL="nano"
+export EDITOR="micro"
+export VISUAL="micro"
 
 # Language.
 export LANG=pt_BR.UTF-8
@@ -37,22 +39,35 @@ export LC_ALL=pt_BR.UTF-8
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Alias.
-alias tempo="curl 'https://wttr.in/?Fq&lang=pt-br'"
-alias clima="curl 'https://wttr.in/?Fq&lang=pt-br'"
+alias code="code --user-data-dir '/home/bonas/.config/Code - OSS/'"
+alias wifi5="sudo netctl-auto switch-to wlp0s26u1u2-REDE5GHZ"
+alias wifi="iwgetid | cut -d':' -f2 | sed -e 's/\"//g'"
 alias disco="df -h -t ext4"
 alias disk="df -h -t ext4"
-alias wifi="iwgetid | cut -d':' -f2 | sed -e 's/\"//g'"
-alias wifi5="sudo netctl-auto switch-to wlp0s26u1u2-REDE5GHZ"
-alias agenda="gcalcli agenda $(date +%Y-%m-%d) $(date +%Y-%m-%d -d '+ 15 day')"
-alias c="chmod +x *.sh"
-alias t="/mnt/home2/dev/sh/ignore/TEST.sh"
-alias ga="/mnt/home2/dev/sh/ignore/google_assistant.sh"
-alias g="/mnt/home2/dev/sh/ignore/google.sh"
-alias y="/mnt/home2/dev/sh/ignore/youtube.sh"
+alias cx="chmod +x *.sh"
+alias c="clear"
 alias yd="youtube-dl"
+
 alias cdi="cd /mnt/home2/dev/sh/ignore && pwd"
 alias cdd="cd /mnt/home2/dev && pwd"
-alias de="cd $HOME/Desktop && pwd && ls"
+alias d="cd $HOME/Desktop && pwd && ls"
+
+alias rn="/mnt/home2/dev/sh/ignore/reactnative.sh"
+alias ga="/mnt/home2/dev/sh/ignore/google_assistant.sh"
+alias test="/mnt/home2/dev/sh/ignore/TEST.sh"
+
+alias x="/mnt/home2/dev/sh/ignore/alias.sh"
+alias ips="/mnt/home2/dev/sh/ignore/alias.sh ips"
+alias agenda="/mnt/home2/dev/sh/ignore/alias.sh agenda"
+alias clima="/mnt/home2/dev/sh/ignore/alias.sh clima"
+alias tempo="/mnt/home2/dev/sh/ignore/alias.sh tempo"
+alias gh="/mnt/home2/dev/sh/ignore/alias.sh gh"
+alias g="/mnt/home2/dev/sh/ignore/alias.sh g"
+alias m="/mnt/home2/dev/sh/ignore/alias.sh m"
+alias y="/mnt/home2/dev/sh/ignore/alias.sh y"
+alias t="/mnt/home2/dev/sh/ignore/alias.sh t"
+alias w="/mnt/home2/dev/sh/ignore/alias.sh w"
+
 alias gcom="git commit -m"
 alias gcomback="git reset --soft HEAD~1"
 alias gc="git checkout"
@@ -64,8 +79,6 @@ alias glog="git log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%
 alias gunstage="git reset HEAD --"
 alias gundo="git checkout --"
 alias gpom="git push origin master -u"
-alias code="code --user-data-dir '/home/bonas/.config/Code - OSS/'"
-alias rn="/mnt/home2/dev/sh/ignore/reactnative.sh"
 
 # ------------
 # Lines configured by zsh-newuser-install.
