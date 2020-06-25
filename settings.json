@@ -18,6 +18,10 @@
   "telemetry.enableTelemetry": false,
   "breadcrumbs.enabled": true,
 
+  "indentRainbow.colors": ["rgba(0,0,0,0.00)", "rgba(130,90,255,0.03)"],
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+
   "git.autofetch": true,
   "gitlens.defaultDateFormat": "DD/MMM (HH:mm) YYYY",
   "gitlens.defaultDateShortFormat": "DD/MMM (HH:mm) YYYY",
@@ -26,9 +30,6 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
 
   "html.autoClosingTags": false,
-
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
 
   "eslint.packageManager": "yarn",
 
