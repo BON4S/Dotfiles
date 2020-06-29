@@ -1,5 +1,10 @@
 # BON4S .zshrc (https://github.com/BON4S/Dotfiles).
 
+# Tilix terminal config
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+  source /etc/profile.d/vte.sh
+fi
+
 # This is my solution to automatically add some project folders to the path.
 # THIS SLOWS THE INITIALIZATION OS ZSH
 # array=()
@@ -13,6 +18,8 @@
 # fi
 
 # Path added manually.
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.cargo/bin
 export XDG_CONFIG_HOME=/usr/share
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
