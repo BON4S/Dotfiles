@@ -5,17 +5,23 @@
 [[ $- != *i* ]] && return
 
 # This is my solution to automatically add some project folders to the path.
-array=()
-while IFS= read -r -d $'\0'; do
-  array+=("$REPLY")
-done < <(find /mnt/home2/dev -maxdepth 5 -type d -name ".bin" -print0)
-if (( ${#array[@]} )); then
-  for x in "${array[@]}"; do
-    export PATH=$PATH:${x}
-  done
-fi
+#array=()
+#while IFS= read -r -d $'\0'; do
+#  array+=("$REPLY")
+#done < <(find /mnt/home2/dev -maxdepth 5 -type d -name ".bin" -print0)
+#if (( ${#array[@]} )); then
+#  for x in "${array[@]}"; do
+#    export PATH=$PATH:${x}
+#  done
+#fi
 
 # Path added manually.
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export XDG_CONFIG_HOME=/usr/share
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 export PATH=$PATH:$HOME/.npm-global/bin
 export PATH=$PATH:$HOME/.config/yarn/global/node_modules/.bin
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -27,8 +33,8 @@ export PATH=$PATH:/opt/android-studio/bin
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
 
 # Preferred editor.
-export EDITOR="nano"
-export VISUAL="nano"
+export EDITOR="micro"
+export VISUAL="micro"
 
 # Language environment.
 export LANG=pt_BR.UTF-8
